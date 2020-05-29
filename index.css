@@ -1,0 +1,66 @@
+input[type="range"] {
+    -webkit-appearance: none;
+    background-color: #bdc3c7;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #fdd835;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}​
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: white;
+    border: 2px solid #e74c3c;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.4);
+}
+canvas {
+    border: 5px #524c00 solid;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+html {
+    color: #ffffff;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(3, 2, 3, 0.7), transparent), repeating-radial-gradient(rgba(235, 220, 192, 0.25), rgba(235, 220, 192, 0.125) 1px, transparent 2px, transparent 50px), repeating-linear-gradient(to right, transparent, transparent 24px, rgba(235, 220, 192, 0.05) 25px, transparent 26px, transparent 100px), repeating-linear-gradient(to bottom, transparent, transparent 24px, rgba(235, 220, 192, 0.05) 25px, transparent 26px, transparent 100px), #00a1b5;
+    background-color: #000000;
+    background-size: auto auto, 50px 50px, 100px 100px, 100px 100px, auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    margin-right: 80px;
+}
+
+.config {
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+}

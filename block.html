@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>miaogame1</title>
+        <!-- <style media="screen">
+            canvas {
+                border: 1px black solid;
+            }
+        </style> -->
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <!-- game相关文件 -->
+        <script src="game/utils.js"></script>
+        <script src="game/scene_class.js"></script>
+        <script src="game/game_class.js"></script>
+        <!-- 主场景文件 -->
+        <script src="scene/main/paddle.js"></script>
+        <script src="scene/main/block.js"></script>
+        <script src="scene/main/ball.js"></script>
+        <script src="scene/main/scene.js"></script>
+        <!-- 结束和标题场景 -->
+        <script src="scene/end/scene_end.js"></script>
+        <script src="scene/title/scene_title.js"></script>
+        <script src="scene/editor/scene_editor.js"></script>
+        <!-- 关卡数据 -->
+        <script src="levels.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="game">
+                <canvas id="id-canvas" width="400" height="300"></canvas>
+                <div class="config">
+                    <input id="id-input-speed" type="range" name="name" value="30">
+                    <label id="id-fps-value">fps: 30</label>
+                </div>
+            </div>
+            <div>
+            <div class="info">
+                <h5>玩法说明</h5>
+                <ul>
+                    <li>按k开始游戏</li>
+                    <li>数字1-7选择要玩的关卡</li>
+                    <li>进入游戏后按x发射小球</li>
+                    <li>鼠标可拖动小球起始位置</li>
+                    <li>按键a、d左右移动挡板</li>
+                </ul>
+            </div>
+            <div>
+            <h5>关卡编辑说明</h5>
+                <ul class="info">
+                    <li>按e进入关卡编辑场景</li>
+                    <li>按数字1-7选择要编辑的关卡</li>
+                    <li>双击已有砖块删除砖块, 双击空白处添加砖块</li>
+                    <li>鼠标拖动砖块移动位置</li>
+                    <li>按s保存并返回开始界面, 按esc取消编辑内容并返回开始界面</li>
+                </ul>
+                <div id="edit-level-container"></div>
+            </div>
+            </div>
+        </div>
+        <!-- <textarea id="id-text-log" rows="12" cols="40"></textarea> -->
+        <script type="text/javascript"></script>
+        <script src="main.js"></script>
+        <!-- 原则: 最外层只能有函数不能有变量, 程序只能有一个入口 -->
+
+    </body>
+
+
+</html>
